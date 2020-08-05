@@ -32,7 +32,7 @@
 
 &--white
 {
-    color: black;
+    color:$color-grey-dark;
     background-color:$color-white;
 
     &::after
@@ -41,6 +41,16 @@
 }
 }
 
+&--green
+{
+    color:$color-white;
+    background-color:$color-primary;
+
+    &::after
+{
+    background-color:$color-primary;
+}
+}
 &::after
 {
     content: "";
@@ -90,10 +100,4 @@
         box-shadow: 0 1rem 2rem ($color-black,.15);
         transform: translateY(0);
     }
-
-
-
-
-
-
 }
